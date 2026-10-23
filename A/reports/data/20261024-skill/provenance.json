@@ -1,0 +1,24 @@
+{
+  "supplied_by": "user_local_archive",
+  "official_notice": "https://m.saikr.com/contest/notice_detail/49598",
+  "date": "2026-10-24",
+  "files": [
+    {
+      "name": "2026年第七届MathorCup数学应用挑战赛—大数据竞赛初赛赛题.zip",
+      "bytes": 300525454,
+      "sha256": "9536c6e90cadabe48c3d108d4b01e20f22e29b8015a54eb223780a709b47c38a"
+    },
+    {
+      "name": "2026年MathorCup大数据挑战赛-赛道A初赛.zip",
+      "bytes": 3007884,
+      "sha256": "db90b72bbf9fe4d93b14a7fd9ba53624de424cb0dd67f47b330dc29111eae625"
+    },
+    {
+      "name": "2026年MathorCup大数据挑战赛-赛道A初赛.pdf",
+      "bytes": 178332,
+      "sha256": "494025cf76c5d47af576927fcf6cd3a073d61db5842d56aaf0ad4da5f4660a78"
+    }
+  ],
+  "git_base": "3da40584ac17abc11eb460b9cb42b4cf85e6663c",
+  "run_state": "uncommitted_skill_design_and_inspection_only"
+}

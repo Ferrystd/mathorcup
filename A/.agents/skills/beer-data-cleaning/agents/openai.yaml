@@ -1,0 +1,4 @@
+interface:
+  display_name: "啤酒数据清洗"
+  short_description: "识别啤酒化学与感官数据，依据文献制定可追溯且防泄漏的清洗流程"
+  default_prompt: "使用 $beer-data-cleaning 检查 A 题附件，核实数据类型与文献依据，再按授权范围制定或执行清洗。"
