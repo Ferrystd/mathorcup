@@ -1,0 +1,65 @@
+# Cancelled topic; preserve local drafts without uploading them.
+/B/
+
+# Local credentials and personal records (even for a private remote).
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+id_rsa
+id_ed25519
+.credentials/
+.private/
+/A/logs/private/
+/A/logs/ai/raw/
+/A/submission/
+*承诺书*.pdf
+*承诺书*.png
+*承诺书*.jpg
+*承诺书*.jpeg
+
+# Raw/derived datasets and complete experiment artifacts stay in shared storage.
+/A/data/raw/
+/A/data/processed/
+/A/runs/
+/A/models/
+/A/outputs/
+/A/paper/build/
+/A/paper/exports/
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.onnx
+
+# Environments and caches.
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+node_modules/
+.cache/
+*.log
+
+# Editor/OS temporary files and local parallel worktrees.
+.idea/
+.vscode/
+.worktrees/
+Thumbs.db
+.DS_Store
+~$*
+*.tmp
+*.swp

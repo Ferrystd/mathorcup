@@ -1,0 +1,82 @@
+[
+  {
+    "id": "S1",
+    "file": "S1-eda.txt",
+    "accessed": "2026-10-23 Asia/Shanghai",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/exploratory-data-analysis/SKILL.md",
+    "sha256": "955C4CEFA49106DD03B55CBD62603BAB2D2FB678E627DD452BA62040C7128484",
+    "bytes": 14722,
+    "license": "MIT",
+    "executed": false
+  },
+  {
+    "id": "S2",
+    "file": "S2-statistics.txt",
+    "accessed": "2026-10-23 Asia/Shanghai",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/statistical-analysis/SKILL.md",
+    "sha256": "E112848726B3713267CAC65E4E2C15491A0A26EE1ED628DB01195F7E43F97997",
+    "bytes": 23585,
+    "license": "MIT",
+    "executed": false
+  },
+  {
+    "id": "S3",
+    "file": "S3-literature.txt",
+    "accessed": "2026-10-23 Asia/Shanghai",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/literature-review/SKILL.md",
+    "sha256": "16A9E85BCDCB9BB859E1646BF836E51B22900445BA2E367D8D75BE05B5A5CBA8",
+    "bytes": 12869,
+    "license": "MIT",
+    "executed": false
+  },
+  {
+    "id": "S4",
+    "file": "S4-writing.txt",
+    "accessed": "2026-10-23 Asia/Shanghai",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/scientific-writing/SKILL.md",
+    "sha256": "511A2096BEBECD8CF0F8212B9D262D37154AE1BA566EB385D93AC968682EDBD1",
+    "bytes": 14897,
+    "license": "MIT",
+    "executed": false
+  },
+  {
+    "id": "S5",
+    "file": "S5-review.txt",
+    "accessed": "2026-10-23 Asia/Shanghai",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/593377bb048752abb0152deab9fbb1083a6087df/skills/peer-review/SKILL.md",
+    "sha256": "A042CCDC76D3399431B9A6C4CD4F98968EAB964B1C14BAEEA4D9E73DE82C7D19",
+    "bytes": 13853,
+    "license": "MIT",
+    "executed": false
+  },
+  {
+    "id": "S6",
+    "file": "S6-data-scientist.txt",
+    "accessed": "2026-10-23 Asia/Shanghai",
+    "url": "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e/categories/05-data-ai/data-scientist.md",
+    "sha256": "D5D51AE2AC59E57A6537D94E6A3CB1EC38E8430D3AAD0595CBA7296C6B98FB97",
+    "bytes": 6876,
+    "license": "MIT",
+    "executed": false
+  },
+  {
+    "id": "S7",
+    "file": "S7-research-analyst.txt",
+    "accessed": "2026-10-23 Asia/Shanghai",
+    "url": "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e/categories/10-research-analysis/research-analyst.md",
+    "sha256": "027369EBE4E23962C514FFC5D284D482F0B346CC2965315A9075E513AD4562A5",
+    "bytes": 6751,
+    "license": "MIT",
+    "executed": false
+  },
+  {
+    "id": "S8",
+    "file": null,
+    "accessed": "2026-10-23 Asia/Shanghai",
+    "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/doc-coauthoring/SKILL.md",
+    "sha256": "2E47D78846FAEEA4A56E9809C52700087A15A2155A3F293A3EFBADED81398EF4",
+    "bytes": 15815,
+    "license": "file-specific license unresolved; source not redistributed",
+    "executed": false
+  }
+]
