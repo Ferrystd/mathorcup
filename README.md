@@ -2,6 +2,8 @@
 
 三名大一队员的私有协作项目：啤酒酿造化合物分析与啤酒风味预测。老师已选A；目前已准备研究规范，正式附件和实验仍待核验。
 
+远端：[Ferrystd/mathorcup](https://github.com/Ferrystd/mathorcup)（Private）。
+
 - [研究入口](START-HERE.md)
 - [A题工作规范](A/AGENTS.md)
 - [Git合作方法](A/GIT_WORKFLOW.md)：短期分支、PR、另一人复核、数据与实验版本

@@ -19,10 +19,10 @@
 
 仓库所有者先在GitHub确认Private，再邀请另外两人的真实GitHub账号为协作者；不要分享账号、token或SSH私钥。账号尚未提供时不创建虚假的CODEOWNERS规则。每名队员使用自己的身份和登录。
 
-以下为PowerShell示例；替换仓库地址、用户名、邮箱和任务名后再执行。不要嵌入token。已有本地仓库的人无需再次clone。
+以下为PowerShell示例；仓库地址已填真实值，用户名、邮箱和任务名需换成自己的。不要嵌入token。已有本地仓库的人无需再次clone。
 
 ```powershell
-git clone <私有仓库SSH或HTTPS地址> mathorcup
+git clone https://github.com/Ferrystd/mathorcup.git mathorcup
 Set-Location mathorcup
 git config --local user.name "自己的姓名或GitHub名"
 git config --local user.email "自己的GitHub邮箱或noreply邮箱"
@@ -31,7 +31,7 @@ git config --local fetch.prune true
 git config --local push.default simple
 ```
 
-初始化机器沿用已配置的Git作者身份；没有修改全局身份。上面三项协作配置在初始化机器已设置，但`.git/config`不随clone传播，所以队友需各自执行。团队仓库没有开源授权声明；上游研究快照保留各自MIT许可，官方材料保留来源，不擅自将整库标成MIT。
+初始化机器沿用已配置的Git作者身份；没有修改全局身份。上面三项协作配置在初始化机器已设置，但`.git/config`不随clone传播，所以队友需各自执行。本机Git直连GitHub失败，已用现有本地代理完成推送，并在本仓库设置`http.https://github.com/.proxy=http://127.0.0.1:7897`；它依赖本机代理继续运行，其他机器不要照抄。团队仓库没有开源授权声明；上游研究快照保留各自MIT许可，官方材料保留来源，不擅自将整库标成MIT。
 
 ## 3. 每个任务的日常命令
 
@@ -62,7 +62,7 @@ PR保持一件事：一个基线/一个错误修复/一个论文节。草稿PR�
 
 ## 4. 审查、合并与冲突
 
-至少另一名队员看diff及证据；模型实现者不能是唯一验收人。默认协调者丙负责点击合并；如果PR由丙编写，则由甲或乙审查后合并。GitHub上优先Squash merge，一项任务变为main上一条清晰提交；初始仓库引导提交是唯一直接建立main的起点。
+至少另一名队员看diff及证据；模型实现者不能是唯一验收人。默认协调者丙负责点击合并；如果PR由丙编写，则由甲或乙审查后合并。GitHub已限定Squash merge，一项任务变为main上一条清晰提交；只有本次初始化引导阶段直接建立main，后续工作走PR。
 
 需要同步main时，在自己的任务分支、干净工作区执行：
 
@@ -111,7 +111,13 @@ git worktree list
 
 推荐main规则：要求PR、至少1名非作者批准、新提交后重审、解决讨论、禁止强推和删除。只在已有可运行检查后才要求对应status check；当前没有CI，不设置不存在的检查。保护在私有仓库上依GitHub套餐而定，不能假设Free一定支持；若不支持，保留私有性并按上述流程人工执行，不为了保护规则改成公开或擅自升级付费套餐。
 
-当前创建/推送及保护状态：**由本轮完成核验后更新**。
+2026-10-23已核验状态：
+
+- 私有远端：[Ferrystd/mathorcup](https://github.com/Ferrystd/mathorcup)，`isPrivate=true`；origin已连接，main初始提交已实际推送并建立追踪。
+- main保护API已成功设置：1人批准、新提交撤销旧批准、解决讨论、禁止强推/删除；未要求不存在的CI检查。
+- 合并仅允许Squash；自动删分支关闭，避免未检查就删除。
+- 管理员暂保留GitHub默认绕过权限（`enforce_admins=false`）；这不代表允许日常绕过团队PR约定。当前所有者可完成初始化收尾；邀请队友后由另一人审查，不把技术可绕过视为自审通过。
+- 尚未邀请队友：需要两人的真实GitHub账号。没有创建虚假CODEOWNERS或已完成邀请的声明。
 
 ## 8. 赛前冻结
 
