@@ -1,0 +1,147 @@
+{
+  "scope": "2026 MathorCup A: frozen inventory and authorized formula-only correction",
+  "run_id": "pr-cleaning-c8bbb86",
+  "tested_commit": "c8bbb8694b8b1ab0b151ce498bec715d82277c48",
+  "git_dirty_at_start": false,
+  "complete": true,
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "openpyxl": "3.1.5",
+    "python": "3.12.14",
+    "node": "v24.19.0",
+    "artifact_tool": "2.8.99"
+  },
+  "input_sha256": {
+    "1.csv": "419849227a02e0c792cd405e6865035b7f58af1a92efa362dbb68a7ca2882f69",
+    "2.csv": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c",
+    "3.xlsx": "fe4dcabd48431e6d677c095962ea9c447e10e509c4f3f8dd511a48c5541ab587",
+    "4.csv": "43a7b38682ed81ce64d97ebc1874c09dffac023ade4877f34e3c83ef7d42dc1c",
+    "5.csv": "c512eed108de6f98e0c6ed66497ed2319745d30ca7f6f4acac4f175a4bdcde9a",
+    "6.csv": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae",
+    "7.csv": "2083138df46640e20b46f7e76ec32cf9b380fd34e019269afd819edeb546ff5e",
+    "8.xlsx": "f2316766792111d98281bd35c8403682be8c8069d166a7a7d5887ffbb227700a",
+    "数据说明.txt": "40813e273e081ae0dc6d6fa76838c5cdbaa721335df3648b4b29d5f76b6378d7"
+  },
+  "implementation_sha256": {
+    "build.mjs": "3e01779859dba4e983e92cd1fa1249c9aca56b4c00b16661a45dd0bb462ec181",
+    "context.py": "94c0f0e0c4e170c474ab44121d93f4b4518bdc558326f786236d42d2cb5652b5",
+    "input_manifest.json": "4960d49806a927b7a8a429066cad3f56488498a4674d6574011e6e1c814a7bd1",
+    "package.py": "9b9434befdbe20e97fd36c7ca2678447238b0c8f0052dfd5761e162e464464c0",
+    "profile.py": "5abc6e3a85e222023b7d068aab00aa8fdb472465737b41913408c06b1d942516",
+    "report.py": "5e4ec0485bf3a88954a6df026837587e04868f9a4d6dbeef08aa27a5d37af969",
+    "reproduce.py": "8a32238d6450ae388dd6b462976b554d6887cc7d961551f930193accbbd440dd",
+    "write_log.py": "8ed41ca7adcf82e7000f23364b77e29220cfa3cf56210907b79c6904c224c6ad"
+  },
+  "stages": [
+    {
+      "name": "profile",
+      "exit_code": 0
+    },
+    {
+      "name": "inventory_report",
+      "exit_code": 0
+    },
+    {
+      "name": "preview",
+      "exit_code": 0
+    },
+    {
+      "name": "build",
+      "exit_code": 0
+    },
+    {
+      "name": "package",
+      "exit_code": 0
+    },
+    {
+      "name": "write_log",
+      "exit_code": 0
+    },
+    {
+      "name": "final_preview",
+      "exit_code": 0
+    }
+  ],
+  "outputs_sha256": {
+    "clean.csv": "419849227a02e0c792cd405e6865035b7f58af1a92efa362dbb68a7ca2882f69",
+    "cleaning_log.md": "177ee55a194a060d526f549a571534efd9b5a13e906296c3b437114f80ba3ff6",
+    "清洗前后对照表.xlsx": "b30626361ebfcf640e2bb1641227d80ccf73d132d7da683440ede0bd52bfc59c"
+  },
+  "checks": {
+    "raw_hashes_unchanged": true,
+    "clean_byte_identical": true,
+    "data_value_changes": 0,
+    "formula_changes": 12,
+    "formula_cells": "3.xlsx / summary / AX2:AX13",
+    "formula_before": "beer_i!$AG$76",
+    "formula_after": "beer_i!$AG$90",
+    "original_card_sheets_byte_identical": 12,
+    "source_fields": 1599,
+    "inventory_tables_including_views": 28,
+    "inventory_field_records_including_views": 2071,
+    "duplicated_view_field_records": 472,
+    "html_has_each_five_item_judgment_and_ABC": true,
+    "html_links_checked": true,
+    "upstream_replacement_candidate_records_in_appendix": 798,
+    "guard_cases": [
+      {
+        "case": "overlap",
+        "rejected": true,
+        "created_output": false
+      },
+      {
+        "case": "existing",
+        "rejected": true,
+        "created_output": false
+      },
+      {
+        "case": "wrong-version",
+        "rejected": true,
+        "created_output": false
+      }
+    ],
+    "artifact_dependency_cases": [
+      {
+        "cell": "U90",
+        "expected": 1,
+        "barnyard": 1,
+        "stale_hops": 0
+      },
+      {
+        "cell": "Y90",
+        "expected": 3,
+        "barnyard": 3,
+        "stale_hops": 0
+      },
+      {
+        "cell": "AE90",
+        "expected": 6,
+        "barnyard": 6,
+        "stale_hops": 0
+      }
+    ]
+  },
+  "artifacts": {
+    "run_directory": "A/runs/pr-cleaning-c8bbb86",
+    "output_directory": "A/outputs/pr-cleaning-c8bbb86",
+    "distribution": "Full artifacts remain local; reproduce with controlled source attachments and the documented bundled runtime."
+  },
+  "limitations": [
+    "Human teammate review is pending.",
+    "No desktop Excel manual acceptance was performed.",
+    "Unknown missing mechanisms and scoring calibration remain unknown; no imputation or model training was performed.",
+    "XLSX container metadata and dependent log hashes may differ across runs; scientific contents and authorized differences are checked."
+  ],
+  "independent_agent_review": {
+    "result": "passed",
+    "review_type": "read-only, separate agent",
+    "human_review_completed": false,
+    "checks": [
+      "all 1599 log and comparison entries",
+      "2071 HTML fields with 15-column dictionaries and five judgments",
+      "all workbook cell values, formulas and styles equal to the previously delivered result",
+      "exactly 12 authorized formula changes and 12 original card XML parts unchanged"
+    ]
+  }
+}
