@@ -1,0 +1,242 @@
+{
+  "mode": "inspection_only",
+  "versions": {
+    "pandas": "3.0.1",
+    "numpy": "2.3.5",
+    "openpyxl": "3.1.5"
+  },
+  "key_checks": {
+    "1.csv": {
+      "rows": 250,
+      "unique_beer": 250,
+      "unique_beer_id_raw_string": 250,
+      "joined_by_beer": 250,
+      "style_disagreements": 0
+    },
+    "4.csv": {
+      "rows": 250,
+      "unique_beer": 250,
+      "unique_beer_id_raw_string": 96,
+      "joined_by_beer": 250,
+      "style_disagreements": 0
+    },
+    "7.csv": {
+      "rows": 250,
+      "unique_beer": 250,
+      "unique_beer_id_raw_string": 96,
+      "joined_by_beer": 250,
+      "style_disagreements": 0
+    }
+  },
+  "positive_anchor_probes": {
+    "pH": {
+      "n": 250,
+      "nonpositive_or_missing_excluded": 0,
+      "max_error_identity": 4.050598186999999,
+      "max_error_log10": 4.999570757391325e-10,
+      "max_error_ln": 0.8784657479457061,
+      "observed_finite_calibrated_missing": {
+        "count": 0,
+        "beer_keys": [],
+        "observed_values": []
+      },
+      "calibrated_zero_cases": []
+    },
+    "ethanol..v.v.": {
+      "n": 249,
+      "nonpositive_or_missing_excluded": 1,
+      "max_error_identity": 10.57404702,
+      "max_error_log10": 4.93689755742821e-10,
+      "max_error_ln": 1.504358076932778,
+      "observed_finite_calibrated_missing": {
+        "count": 0,
+        "beer_keys": [],
+        "observed_values": []
+      },
+      "calibrated_zero_cases": [
+        {
+          "beer": "223",
+          "observed": -1.455931956
+        }
+      ]
+    },
+    "color.EBC.": {
+      "n": 250,
+      "nonpositive_or_missing_excluded": 0,
+      "max_error_identity": 296.873820738,
+      "max_error_log10": 4.982538825970551e-10,
+      "max_error_ln": 3.2254341953713612,
+      "observed_finite_calibrated_missing": {
+        "count": 0,
+        "beer_keys": [],
+        "observed_values": []
+      },
+      "calibrated_zero_cases": []
+    },
+    "bitterness": {
+      "n": 248,
+      "nonpositive_or_missing_excluded": 2,
+      "max_error_identity": 60.456357156,
+      "max_error_log10": 4.993805369224447e-10,
+      "max_error_ln": 2.337023723441074,
+      "observed_finite_calibrated_missing": {
+        "count": 0,
+        "beer_keys": [],
+        "observed_values": []
+      },
+      "calibrated_zero_cases": [
+        {
+          "beer": "130",
+          "observed": -1.144178095
+        },
+        {
+          "beer": "192",
+          "observed": -1.144178095
+        }
+      ]
+    },
+    "CO2.PSI.": {
+      "n": 211,
+      "nonpositive_or_missing_excluded": 39,
+      "max_error_identity": 4.392429824,
+      "max_error_log10": 4.914992857152356e-10,
+      "max_error_ln": 0.92167036373028,
+      "observed_finite_calibrated_missing": {
+        "count": 39,
+        "beer_keys": [
+          "10",
+          "179",
+          "111",
+          "46",
+          "54",
+          "122",
+          "169",
+          "43",
+          "151",
+          "138",
+          "59",
+          "82",
+          "241",
+          "42",
+          "97",
+          "173",
+          "177",
+          "205",
+          "24",
+          "132",
+          "115",
+          "18",
+          "78",
+          "101",
+          "144",
+          "41",
+          "153",
+          "162",
+          "130",
+          "204",
+          "94",
+          "38",
+          "214",
+          "89",
+          "229",
+          "1",
+          "25",
+          "21",
+          "192"
+        ],
+        "observed_values": [
+          -0.230992129
+        ]
+      },
+      "calibrated_zero_cases": []
+    },
+    "acetaldehyde": {
+      "n": 249,
+      "nonpositive_or_missing_excluded": 1,
+      "max_error_identity": 17.293492424,
+      "max_error_log10": 4.963643385202943e-10,
+      "max_error_ln": 2.086480141041969,
+      "observed_finite_calibrated_missing": {
+        "count": 0,
+        "beer_keys": [],
+        "observed_values": []
+      },
+      "calibrated_zero_cases": [
+        {
+          "beer": "40",
+          "observed": -1.902829488
+        }
+      ]
+    }
+  },
+  "cards": {
+    "sheets": [
+      "beer_1",
+      "beer_2",
+      "beer_3",
+      "beer_4",
+      "beer_5",
+      "beer_6",
+      "beer_7",
+      "beer_8",
+      "beer_9",
+      "beer_10",
+      "beer_11",
+      "beer_12"
+    ],
+    "differences_from_beer_1": {
+      "beer_1": [],
+      "beer_2": [
+        "S3"
+      ],
+      "beer_3": [
+        "S3"
+      ],
+      "beer_4": [
+        "S3"
+      ],
+      "beer_5": [
+        "S3"
+      ],
+      "beer_6": [
+        "S3"
+      ],
+      "beer_7": [
+        "S3"
+      ],
+      "beer_8": [
+        "S3"
+      ],
+      "beer_9": [
+        "S3"
+      ],
+      "beer_10": [
+        "S3"
+      ],
+      "beer_11": [
+        "S3"
+      ],
+      "beer_12": [
+        "S3"
+      ]
+    },
+    "primary_response_nonempty": {
+      "beer_1": 0,
+      "beer_2": 0,
+      "beer_3": 0,
+      "beer_4": 0,
+      "beer_5": 0,
+      "beer_6": 0,
+      "beer_7": 0,
+      "beer_8": 0,
+      "beer_9": 0,
+      "beer_10": 0,
+      "beer_11": 0,
+      "beer_12": 0
+    },
+    "summary_barnyard_formula_AX2": "=beer_1!$AG$76",
+    "summary_stale_hops_formula_AR2": "=beer_1!$AG$76",
+    "barnyard_card_label_R89": "Barnyard/horsey",
+    "noncell_parts": []
+  }
+}
